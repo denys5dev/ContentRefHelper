@@ -1,0 +1,17 @@
+.box {
+  width: 300px;
+  height: 350px;
+  border: 2px solid salmon;
+  float: left;
+  margin: 5px;
+
+  &-header {
+    background-color: pink;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+  }
+  &-body {
+    margin: 5px;
+  }
+}

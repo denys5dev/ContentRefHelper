@@ -1,0 +1,10 @@
+<ng-container *ngFor="let c of (control | keyvalue)">
+  <ng-container [ngSwitch]="c.key">
+    <ng-container class="label-placeholder" *ngSwitchCase="'Name'">
+      <label for="">Name</label> <input type="text" />
+    </ng-container>
+    <div class="label-placeholder" *ngSwitchDefault>
+      <label for="">{{ c.key }}</label> - <span>{{ c.value }}</span>
+    </div>
+  </ng-container>
+</ng-container>
